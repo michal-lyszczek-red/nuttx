@@ -63,7 +63,8 @@ set(SRCS
     lib_readlinkat.c
     lib_symlinkat.c
     lib_flock.c
-    lib_unlinkat.c)
+    lib_unlinkat.c
+    lib_getpass.c)
 
 if(NOT CONFIG_SCHED_USER_IDENTITY)
   list(APPEND SRCS lib_setuid.c lib_setgid.c lib_getuid.c lib_getgid.c)

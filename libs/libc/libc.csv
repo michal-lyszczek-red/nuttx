@@ -104,6 +104,7 @@
 "getoptindp","unistd.h","","FAR int *"
 "getoptoptp","unistd.h","","FAR int *"
 "getpriority","sys/resource.h","","int","int","id_t"
+"getpass","unistd.h","","FAR const char *"
 "getpwnam_r","pwd.h","","int","FAR const char *","FAR struct passwd *","FAR char *","size_t","FAR struct passwd **"
 "getpwuid_r","pwd.h","","int","uid_t","FAR struct passwd *","FAR char *","size_t","FAR struct passwd **"
 "gets","stdio.h","defined(CONFIG_FILE_STREAM)","FAR char *","FAR char *"
