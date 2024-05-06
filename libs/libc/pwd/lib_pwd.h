@@ -28,6 +28,7 @@
 #include <nuttx/config.h>
 
 #include <pwd.h>
+#include <shadow.h>
 
 /****************************************************************************
  * Pre-processor Definitions
@@ -44,6 +45,7 @@
 #define ROOT_DIR    "/root"
 #define ROOT_SHELL  "/bin/nsh"
 #define ROOT_PASSWD "root"
+#define ROOT_PWDP   "$1$123$SGj4CnC7VtiFx.tjjtazK1"
 
 /****************************************************************************
  * Public Data
@@ -61,6 +63,7 @@ extern "C"
 
 EXTERN int g_passwd_index;
 EXTERN struct passwd g_passwd;
+EXTERN struct spwd g_spwd;
 EXTERN char g_passwd_buffer[CONFIG_LIBC_PASSWD_LINESIZE];
 
 /****************************************************************************
