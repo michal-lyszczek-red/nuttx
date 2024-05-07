@@ -54,6 +54,10 @@ CSRCS += lib_fork.c
 ifeq ($(CONFIG_SCHED_WAITPID),y)
 CSRCS += lib_vfork.c
 endif
+
+ifeq ($(CONFIG_CRYPTO),y)
+CSRCS += lib_crypt.c lib_crypt_r.c
+endif
 endif
 
 # Add the unistd directory to the build
